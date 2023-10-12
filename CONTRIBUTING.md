@@ -1,4 +1,4 @@
-# Contribute to MakerSpace-2023
+# Contribute to Makerspace-2023
 
 We welcome the Makerspace-2023 participants to contribute, and we value everybody's contribution. Systematic contribution and version control is the key to a successful project. We have a few guidelines to help you get started with contributing to the project.
 
@@ -15,7 +15,7 @@ There are several ways you can contribute:
 
 ## Fixing outstanding issues
 
-If you notice an issue with the existing code and have a fix in mind, feel free to [start contributing](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md/#create-a-pull-request) and open a Pull Request!
+<!-- If you notice an issue with the existing code and have a fix in mind, feel free to [start contributing](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md/#create-a-pull-request) and open a Pull Request! -->
 
 ## Adding documentation?
 
@@ -61,9 +61,9 @@ You'll need **[Python 3.10](https://www.python.org/)** or above to contribute. F
    pip install -r requirements.txt
    ```
 
-5. Develop the features on your branch.
+ 5. Develop the features on your branch.
 
-   As you work on your code, you should make sure the test suite
+  <!-- As you work on your code, you should make sure the test suite
    passes. Run the tests impacted by your changes like this:
 
    ```bash
@@ -121,13 +121,13 @@ You'll need **[Python 3.10](https://www.python.org/)** or above to contribute. F
    ```
 
    This will build the documentation in the `~/tmp/test-build` folder where you can inspect the generated
-   Markdown files with your favorite editor. You can also preview the docs on GitHub when you open a pull request.
+   Markdown files with your favorite editor. You can also preview the docs on GitHub when you open a pull request. -->
 
    Once you're happy with your changes, add changed files with `git add` and
    record your changes locally with `git commit`:
 
    ```bash
-   git add modified_file.py
+   git add .
    git commit
    ```
 
@@ -150,7 +150,7 @@ You'll need **[Python 3.10](https://www.python.org/)** or above to contribute. F
 
    If you've already opened a pull request, you'll need to force push with the `--force` flag. Otherwise, if the pull request hasn't been opened yet, you can just push your changes normally.
 
-6. Now you can go to your fork of the repository on GitHub and click on **Pull request** to open a pull request. Make sure you tick off all the boxes in our [checklist](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md/#pull-request-checklist) below. When you're ready, you can send your changes to the project maintainers for review.
+6. Now you can go to your fork of the repository on GitHub and click on **Pull request** to open a pull request. Make sure you tick off all the boxes in our [checklist](https://github.com/robotix/Makerspace-2023/blob/main/CONTRIBUTING.md/#pull-request-checklist) below. When you're ready, you can send your changes to the project maintainers for review.
 
 7. It's ok if maintainers request changes, it happens to our core contributors
    too! So everyone can see the changes in the pull request, work in your local
