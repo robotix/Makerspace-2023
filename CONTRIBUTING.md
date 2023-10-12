@@ -15,7 +15,7 @@ There are several ways you can contribute:
 
 ## Fixing outstanding issues
 
-<!-- If you notice an issue with the existing code and have a fix in mind, feel free to [start contributing](https://github.com/huggingface/transformers/blob/main/CONTRIBUTING.md/#create-a-pull-request) and open a Pull Request! -->
+If you notice an issue with the existing code and have a fix in mind, feel free to [start contributing](https://github.com/robotix/Makerspace-2023/blob/main/CONTRIBUTING.md/#create-a-pull-request) and open a Pull Request!
 
 ## Adding documentation?
 
@@ -62,66 +62,6 @@ You'll need **[Python 3.10](https://www.python.org/)** or above to contribute. F
    ```
 
  5. Develop the features on your branch.
-
-  <!-- As you work on your code, you should make sure the test suite
-   passes. Run the tests impacted by your changes like this:
-
-   ```bash
-   pytest tests/<TEST_TO_RUN>.py
-   ```
-
-   For more information about tests, check out the
-   [Testing](https://huggingface.co/docs/transformers/testing) guide.
-
-   🤗 Transformers relies on `black` and `ruff` to format its source code
-   consistently. After you make changes, apply automatic style corrections and code verifications
-   that can't be automated in one go with:
-
-   ```bash
-   make fixup
-   ```
-
-   This target is also optimized to only work with files modified by the PR you're working on.
-
-   If you prefer to run the checks one after the other, the following command applies the
-   style corrections:
-
-   ```bash
-   make style
-   ```
-
-   🤗 Transformers also uses `ruff` and a few custom scripts to check for coding mistakes. Quality
-   controls are run by the CI, but you can run the same checks with:
-
-   ```bash
-   make quality
-   ```
-
-   Finally, we have a lot of scripts to make sure we didn't forget to update
-   some files when adding a new model. You can run these scripts with:
-
-   ```bash
-   make repo-consistency
-   ```
-
-   To learn more about those checks and how to fix any issues with them, check out the
-   [Checks on a Pull Request](https://huggingface.co/docs/transformers/pr_checks) guide.
-
-   If you're modifying documents under `docs/source` directory, make sure the documentation can still be built. This check will also run in the CI when you open a pull request. To run a local check
-   make sure you install the documentation builder:
-   
-   ```bash
-   pip install ".[docs]"
-   ```
-
-   Run the following command from the root of the repository:
-
-   ```bash
-   doc-builder build transformers docs/source/en --build_dir ~/tmp/test-build
-   ```
-
-   This will build the documentation in the `~/tmp/test-build` folder where you can inspect the generated
-   Markdown files with your favorite editor. You can also preview the docs on GitHub when you open a pull request. -->
 
    Once you're happy with your changes, add changed files with `git add` and
    record your changes locally with `git commit`:
