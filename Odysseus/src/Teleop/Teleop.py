@@ -44,10 +44,12 @@ class robot:
         
 
 actions = {
-    curses.KEY_UP:    robot.forward,
-    curses.KEY_DOWN:  robot.backward,
-    curses.KEY_LEFT:  robot.left,
-    curses.KEY_RIGHT: robot.right,
+    curses.W:   robot.forward,
+    curses.S:   robot.backward,
+    curses.A:   robot.left,
+    curses.D:   robot.right,
+    curses.Q:   robot.anticlock,
+    curses.E:   robot.clock
 }
 
 def main(window):
