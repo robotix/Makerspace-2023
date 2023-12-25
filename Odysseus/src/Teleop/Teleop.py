@@ -1,7 +1,7 @@
 import curses
 from gpiozero import Motor
 
-class Robot:
+class robot:
     def __init__(self, motors):
         self.front_motor = Motor(forward = motors[0], backward = motors[1])
         self.right_motor = Motor(forward = motors[2], backward = motors[3])
@@ -9,16 +9,38 @@ class Robot:
         self.back_motor = Motor(forward = motors[6], backward = motors[7])
 
     def forward(self):
+        self.right_motor.forward()
+        self.left_motor.forward()
+        print("Moving forward")
 
     def backward(self):
+        self.right_motor.backward()
+        self.left_motor.backward()
+        print("Moving backward")
 
     def right(self):
+        self.front_motor.forward()
+        self.back_motor.forward()
+        print("Moving right")
 
     def left(self):
-
-    def clock(self):
+        self.front_motor.backward()
+        self.back_motor.backward()
+        print("Moving left")
 
     def anticlock(self):
+        self.front_motor.backward()
+        self.left_motor.backward()
+        self.back_motor.forward()
+        self.right_motor.forward()
+        print("Turning anti-clockwise")
+
+    def clock(self):
+        self.front_motor.forward()
+        self.left_motor.forward()
+        self.back_motor.backward()
+        self.right_motor.backward()
+        print("Turning clockwise")
         
 
 actions = {
