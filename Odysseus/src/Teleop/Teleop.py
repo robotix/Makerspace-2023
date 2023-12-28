@@ -7,6 +7,7 @@ class robot:
         self.right_motor = Motor(forward = motors[2], backward = motors[3])
         self.left_motor = Motor(forward = motors[4], backward = motors[5])
         self.back_motor = Motor(forward = motors[6], backward = motors[7])
+        print("Robot is initialized")
 
     def forward(self):
         self.right_motor.forward()
@@ -58,6 +59,8 @@ actions = {
     curses.Q:   robot.anticlock,
     curses.E:   robot.clock
 }
+
+motors = [17, 18, 23, 24, 22, 27, 5, 6]
 
 def main(window):
     next_key = None
