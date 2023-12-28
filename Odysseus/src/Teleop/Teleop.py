@@ -7,24 +7,33 @@ class robot:
         self.right_motor = Motor(forward = motors[2], backward = motors[3])
         self.left_motor = Motor(forward = motors[4], backward = motors[5])
         self.back_motor = Motor(forward = motors[6], backward = motors[7])
+        print("Robot is initialized")
 
     def forward(self):
+        self.front_motor.stop()
         self.right_motor.forward()
         self.left_motor.forward()
+        self.back_motor.stop()
         print("Moving forward")
 
     def backward(self):
+        self.front_motor.stop()
         self.right_motor.backward()
         self.left_motor.backward()
+        self.back_motor.stop()
         print("Moving backward")
 
     def right(self):
         self.front_motor.forward()
+        self.right_motor.stop()
+        self.left_motor.stop()
         self.back_motor.forward()
         print("Moving right")
 
     def left(self):
         self.front_motor.backward()
+        self.right_motor.stop()
+        self.left_motor.stop()
         self.back_motor.backward()
         print("Moving left")
 
@@ -41,6 +50,13 @@ class robot:
         self.back_motor.backward()
         self.right_motor.backward()
         print("Turning clockwise")
+
+    def stop(self):
+        self.front_motor.stop()
+        self.left_motor.stop()
+        self.back_motor.stop()
+        self.right_motor.stop()
+        print("Robot has stopped moving")
         
 
 actions = {
@@ -51,6 +67,8 @@ actions = {
     curses.Q:   robot.anticlock,
     curses.E:   robot.clock
 }
+
+motors = [17, 18, 23, 24, 22, 27, 5, 6]
 
 def main(window):
     next_key = None
