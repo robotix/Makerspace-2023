@@ -41,6 +41,13 @@ class robot:
         self.back_motor.backward()
         self.right_motor.backward()
         print("Turning clockwise")
+
+    def stop(self):
+        self.front_motor.stop()
+        self.left_motor.stop()
+        self.back_motor.stop()
+        self.right_motor.stop()
+        print("Robot has stopped moving")
         
 
 actions = {
